@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaZéora Services & Solutions | Luxury Custom Craftsmanship & Corporate Solutions Dubai</title>
-    <!-- Tailwind CSS -->
+    <title>LaZéora Services & Solutions | Premium Commercial & Residential Technical Services</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -19,735 +19,258 @@
                 extend: {
                     colors: {
                         gold: {
-                            100: '#FFFBEB',
+                            100: '#FFF8E1',
                             300: '#F3E5AB',
-                            400: '#E6C665',
+                            400: '#E6CA65',
                             500: '#D4AF37',
-                            600: '#B8860B',
-                            700: '#996515',
-                            800: '#7A5210',
+                            600: '#AA820A',
+                            700: '#856404'
                         },
-                        dark: {
-                            900: '#070708',
-                            800: '#0E0F12',
-                            700: '#16171C',
-                            600: '#22242B',
+                        obsidian: {
+                            900: '#0B0D11',
+                            800: '#131720',
+                            700: '#1C2230',
+                            600: '#2A3245'
                         }
                     },
                     fontFamily: {
                         serif: ['Cinzel', 'serif'],
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
                     }
                 }
             }
         }
     </script>
     <style>
-        body {
-            background-color: #070708;
-            color: #E2E8F0;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
-        }
-        
         .gold-gradient-text {
-            background: linear-gradient(135deg, #FFFBEB 0%, #D4AF37 50%, #B8860B 100%);
+            background: linear-gradient(135deg, #FFF8E1 0%, #D4AF37 50%, #AA820A 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .gold-gradient-border {
-            border-image: linear-gradient(to right, #D4AF37, #996515, #D4AF37) 1;
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
         }
-
-        .gold-button {
-            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
-        }
-
-        .gold-button:hover {
-            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
-            box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45);
-            transform: translateY(-2px);
-        }
-
-        .glass-panel {
-            background: rgba(22, 23, 28, 0.7);
+        .glass-card {
+            background: rgba(19, 23, 32, 0.75);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-
-        .glass-panel-hover {
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .glass-panel-hover:hover {
-            border-color: rgba(212, 175, 55, 0.6);
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.15);
-        }
-
-        .hero-bg {
-            background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.15) 0%, rgba(7, 7, 8, 0.95) 70%),
-                        url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        /* Gold glow animation */
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
-            50% { box-shadow: 0 0 30px rgba(212, 175, 55, 0.6); }
-        }
-
-        .animate-glow {
-            animation: pulse-glow 3s infinite;
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #070708;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #22242B;
-            border-radius: 4px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #D4AF37;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-gold-500 selection:text-black">
+<body class="bg-obsidian-900 text-gray-200 font-sans antialiased selection:bg-gold-500 selection:text-obsidian-900">
 
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-gold-500/20 px-4 lg:px-8 py-3">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <!-- Brand Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-full p-[2px] bg-gradient-to-r from-gold-500 via-gold-300 to-gold-700 shadow-md">
-                    <img src="https://lh3.googleusercontent.com/gg/ACRwjatTxWVwRghE4HM0TRCbAcvBH-l86KJCJPR47TEpT1e0UWf--3UJH1HMAvMbwoNREsyrmqm_avpjIhJFzKwsBPHl-rUd2I9XWKYSB3fu09arywTPDckiUP6Leu9STqz6bzaOhVOc0wkDx-mQ-lOV1a_KS-FzsloI9x8HQuE53KTWLARj5JQO29m0KlVtVtVXqNoW4Y_ghMpDvjbZ20d1aBKuvaRocRrBItXybWUnvN9-1Ok9jPDsGSYFeDw35ajurplcosVzmL8pzZgmavQ0Y9MLqCwK1wG7kabA=s0" 
-                         alt="LaZéora Logo" 
-                         class="w-full h-full object-cover rounded-full bg-black">
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full border border-gold-500/50 p-1 bg-obsidian-800 flex items-center justify-center">
+                    <span class="font-serif font-bold text-xl text-gold-400">LZ</span>
                 </div>
                 <div>
-                    <span class="font-serif text-lg font-bold tracking-wider text-white block leading-none group-hover:text-gold-400 transition-colors">LaZéora</span>
-                    <span class="text-[9px] tracking-[0.2em] text-gold-500 font-semibold uppercase block mt-1">Services &amp; Solutions</span>
+                    <span class="font-serif font-bold text-lg text-white tracking-widest block leading-none">LAZÉORA</span>
+                    <span class="text-[10px] tracking-widest text-gold-400 uppercase font-medium">Services & Solutions</span>
                 </div>
             </a>
 
-            <!-- Desktop Links -->
-            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest text-gray-300 font-medium">
-                <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#services" class="hover:text-gold-400 transition-colors">Services</a>
-                <a href="#calculator" class="hover:text-gold-400 transition-colors text-gold-400 font-semibold">Quote Calculator</a>
-                <a href="#guarantee" class="hover:text-gold-400 transition-colors">Gold Guarantee</a>
-                <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+                <a href="#renovation" class="hover:text-gold-400 transition-colors">Renovation & Fit-Out</a>
+                <a href="#technical" class="hover:text-gold-400 transition-colors">Plumbing & Electrical</a>
+                <a href="#printing" class="hover:text-gold-400 transition-colors">Printing & Woodwork</a>
+                <a href="#calculator" class="hover:text-gold-400 transition-colors">Get Instant Quote</a>
             </div>
 
-            <!-- Quick Action CTAs -->
-            <div class="flex items-center gap-3">
-                <a href="https://wa.me/971588150615?text=Hello%20LaZ%C3%A9ora%20Team%2C%20I%20would%20like%20to%20inquire%20about%20a%20luxury%20custom%20order." 
-                   target="_blank" 
-                   class="gold-button text-black font-bold text-xs uppercase tracking-wider px-4 py-2.5 rounded-full flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-sm"></i>
-                    <span class="hidden sm:inline">WhatsApp VIP</span>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://wa.me/971588150615?text=Hello%20LaZéora,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-600 to-gold-400 text-obsidian-900 font-bold hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp VIP</span>
                 </a>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="md:hidden text-gold-500 text-xl p-2 focus:outline-none">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
             </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-white text-2xl">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden md:hidden glass-panel mt-3 rounded-xl p-5 border border-gold-500/30">
-            <div class="flex flex-col space-y-4 text-sm uppercase tracking-wider text-gray-200">
-                <a href="#about" class="mobile-link py-1 hover:text-gold-400">About Us</a>
-                <a href="#services" class="mobile-link py-1 hover:text-gold-400">Services &amp; Collections</a>
-                <a href="#calculator" class="mobile-link py-1 text-gold-400 font-bold">Quote Calculator</a>
-                <a href="#guarantee" class="mobile-link py-1 hover:text-gold-400">Gold Guarantee</a>
-                <a href="#contact" class="mobile-link py-1 hover:text-gold-400">Contact Us</a>
-            </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden glass-card border-t border-gold-500/20 px-6 py-6 space-y-4">
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-lg font-medium text-white hover:text-gold-400">Services Overview</a>
+            <a href="#renovation" onclick="toggleMobileMenu()" class="block text-lg font-medium text-white hover:text-gold-400">Renovation & Decorating</a>
+            <a href="#technical" onclick="toggleMobileMenu()" class="block text-lg font-medium text-white hover:text-gold-400">Plumbing & Electrical</a>
+            <a href="#printing" onclick="toggleMobileMenu()" class="block text-lg font-medium text-white hover:text-gold-400">Printing & Engraving</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block text-lg font-medium text-gold-400 font-bold">Estimate Project Cost</a>
+            <a href="https://wa.me/971588150615?text=Hello%20LaZéora,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="w-full py-3 rounded-xl bg-gold-500 text-obsidian-900 font-bold text-center block">
+                Contact on WhatsApp
+            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-24 pb-16 hero-bg">
-        <div class="absolute inset-0 bg-gradient-to-b from-dark-900/60 via-dark-900/80 to-dark-900"></div>
-        
-        <div class="relative max-w-7xl mx-auto px-4 lg:px-8 py-12 w-full grid md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-7 space-y-6 text-center md:text-left">
-                <!-- Dubai Location Badge -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold tracking-wider uppercase">
-                    <i class="fa-solid fa-location-dot text-gold-500"></i> Dubai &amp; UAE Bespoke Supplier
-                </div>
-
-                <!-- Main Title -->
-                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-                    Crafting Excellence.<br>
-                    <span class="gold-gradient-text">Elevating Luxury Brands</span> in Dubai.
-                </h1>
-
-                <p class="text-gray-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed mx-auto md:mx-0">
-                    Precision Laser Engraving, Hardwood Hospitality Tabletop Accoutrements, Custom Meat &amp; Cheese Boards, and Bespoke Corporate Assets tailored for the Middle East’s finest establishments.
-                </p>
-
-                <!-- CTA Actions -->
-                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
-                    <a href="#calculator" class="gold-button text-black font-bold px-8 py-4 rounded-xl text-sm uppercase tracking-wider flex items-center justify-center gap-3">
-                        <i class="fa-solid fa-calculator"></i> Build Instant Quote
-                    </a>
-                    <a href="https://wa.me/971588150615?text=Hello!%20I%20am%20interested%20in%20a%20luxury%20custom%20product%20order." target="_blank" class="glass-panel text-gold-400 font-semibold px-8 py-4 rounded-xl text-sm uppercase tracking-wider flex items-center justify-center gap-3 border border-gold-500/40 hover:bg-gold-500/10 transition-colors">
-                        <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i> Direct WhatsApp
-                    </a>
-                </div>
-
-                <!-- Trust Stats -->
-                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-gold-500/20 max-w-lg mx-auto md:mx-0">
-                    <div>
-                        <div class="font-serif text-2xl lg:text-3xl font-bold text-gold-400">100%</div>
-                        <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Food Grade Safe</div>
-                    </div>
-                    <div>
-                        <div class="font-serif text-2xl lg:text-3xl font-bold text-gold-400">0.1mm</div>
-                        <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Engraving Precision</div>
-                    </div>
-                    <div>
-                        <div class="font-serif text-2xl lg:text-3xl font-bold text-gold-400">UAE</div>
-                        <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Express Delivery</div>
-                    </div>
-                </div>
+    <!-- HERO SECTION -->
+    <section class="pt-36 pb-20 px-4 relative overflow-hidden bg-gradient-to-b from-obsidian-900 via-obsidian-800 to-obsidian-900">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.08)_0,transparent_70%)]"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-6">
+                <i class="fa-solid fa-crown text-xs"></i> Premier Technical & Turnkey Solutions in Dubai
             </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-extrabold text-white tracking-tight leading-tight mb-6">
+                Your Complete Partner for <br/>
+                <span class="gold-gradient-text">Renovations, Maintenance & Printing</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                From high-end home renovations, interior decorating, electrical & plumbing maintenance, to bespoke printing and customized branded woodwork. Delivering excellence across the UAE.
+            </p>
 
-            <!-- Hero Image Visual Banner -->
-            <div class="md:col-span-5">
-                <div class="relative glass-panel p-4 rounded-2xl border border-gold-500/30 animate-glow">
-                    <div class="relative h-96 rounded-xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" 
-                             alt="Luxury Custom Hardwood Crafting" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-panel rounded-lg border border-gold-500/30">
-                            <div class="flex items-center gap-3">
-                                <i class="fa-solid fa-crown text-gold-400 text-xl"></i>
-                                <div>
-                                    <h4 class="font-serif font-bold text-white text-sm">Bespoke Commercial Crafting</h4>
-                                    <p class="text-xs text-gold-300">Custom Acacia, Beech &amp; Rubberwood Assets</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Quote Calculator Section -->
-    <section id="calculator" class="py-20 relative bg-dark-800 border-y border-gold-500/20">
-        <div class="max-w-5xl mx-auto px-4 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-gold-500 text-xs font-semibold uppercase tracking-[0.2em] block mb-2">Instant VIP Estimator</span>
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Custom Order Estimator &amp; Builder</h2>
-                <p class="text-gray-400 text-sm mt-3">Select your specifications below for an instant estimated budget range and dispatch your custom inquiry directly to our master craftsmen via WhatsApp.</p>
-            </div>
-
-            <div class="glass-panel p-6 md:p-10 rounded-2xl border border-gold-500/30 shadow-2xl">
-                <form id="quoteForm" onsubmit="return false;" class="space-y-8">
-                    
-                    <!-- Category Selector -->
-                    <div>
-                        <label class="block text-gold-400 text-xs uppercase tracking-widest font-semibold mb-3">1. Select Product Category</label>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-                            <label class="cursor-pointer">
-                                <input type="radio" name="productCategory" value="Cutting & Deli Boards" data-base="120" checked class="peer sr-only">
-                                <div class="p-4 rounded-xl border border-gray-700 bg-dark-900 peer-checked:border-gold-500 peer-checked:bg-gold-500/10 text-center transition-all">
-                                    <i class="fa-solid fa-utensils text-gold-400 text-xl mb-2 block"></i>
-                                    <span class="text-xs font-semibold text-white block">Deli &amp; Cheese Boards</span>
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="productCategory" value="Hospitality Amenities" data-base="90" class="peer sr-only">
-                                <div class="p-4 rounded-xl border border-gray-700 bg-dark-900 peer-checked:border-gold-500 peer-checked:bg-gold-500/10 text-center transition-all">
-                                    <i class="fa-solid fa-hotel text-gold-400 text-xl mb-2 block"></i>
-                                    <span class="text-xs font-semibold text-white block">Hospitality Amenities</span>
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="productCategory" value="Executive Corporate Gifts" data-base="180" class="peer sr-only">
-                                <div class="p-4 rounded-xl border border-gray-700 bg-dark-900 peer-checked:border-gold-500 peer-checked:bg-gold-500/10 text-center transition-all">
-                                    <i class="fa-solid fa-gift text-gold-400 text-xl mb-2 block"></i>
-                                    <span class="text-xs font-semibold text-white block">VIP Corporate Gifts</span>
-                                </div>
-                            </label>
-                            <label class="cursor-pointer">
-                                <input type="radio" name="productCategory" value="Custom Engraving Service" data-base="60" class="peer sr-only">
-                                <div class="p-4 rounded-xl border border-gray-700 bg-dark-900 peer-checked:border-gold-500 peer-checked:bg-gold-500/10 text-center transition-all">
-                                    <i class="fa-solid fa-bolt text-gold-400 text-xl mb-2 block"></i>
-                                    <span class="text-xs font-semibold text-white block">Laser Marking Service</span>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Material & Engraving Options -->
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-gold-400 text-xs uppercase tracking-widest font-semibold mb-2">2. Primary Material</label>
-                            <select id="materialSelect" class="w-full bg-dark-900 border border-gray-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none">
-                                <option value="Acacia Hardwood (Premium Grade)" data-multiplier="1.2">Acacia Hardwood (Rich Grain &amp; Water Resistant)</option>
-                                <option value="Beech Wood (Classic Uniform Finish)" data-multiplier="1.0">Beech Wood (Classic Uniform Grain)</option>
-                                <option value="Rubberwood (Eco-Friendly Hardwood)" data-multiplier="0.9">Rubberwood (Sustainable &amp; Lightweight)</option>
-                                <option value="Walnut / Dark Mahogany" data-multiplier="1.5">Walnut / Dark Mahogany (Ultra Luxury)</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-gold-400 text-xs uppercase tracking-widest font-semibold mb-2">3. Engraving &amp; Branding Style</label>
-                            <select id="engravingSelect" class="w-full bg-dark-900 border border-gray-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none">
-                                <option value="Precision High-Definition Laser Engraving" data-cost="20">HD Precision Laser Engraving (Logo/Text)</option>
-                                <option value="Deep Heat Burn Branding" data-cost="15">Deep Heat Burn Branding</option>
-                                <option value="Custom Inlay / Dual Tone Marking" data-cost="35">Custom Inlay / Dual Tone Finish</option>
-                                <option value="Plain Crafting (No Branding)" data-cost="0">No Branding / Plain Finished Wood</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Quantity Slider -->
-                    <div>
-                        <div class="flex justify-between items-center mb-2">
-                            <label class="text-gold-400 text-xs uppercase tracking-widest font-semibold">4. Order Quantity (Units)</label>
-                            <span id="quantityDisplay" class="font-serif font-bold text-xl text-gold-400">25 Pcs</span>
-                        </div>
-                        <input type="range" id="quantityRange" min="10" max="500" value="25" step="5" class="w-full h-2 bg-dark-900 rounded-lg appearance-none cursor-pointer accent-gold-500">
-                        <div class="flex justify-between text-[11px] text-gray-500 mt-1">
-                            <span>10 Units (Min Order)</span>
-                            <span>100 Units</span>
-                            <span>500+ Bulk Production</span>
-                        </div>
-                    </div>
-
-                    <!-- Calculated Output Panel -->
-                    <div class="p-6 rounded-xl bg-dark-900 border border-gold-500/40 flex flex-col md:flex-row justify-between items-center gap-6">
-                        <div>
-                            <span class="text-xs uppercase tracking-wider text-gray-400 block">Estimated Commercial Investment:</span>
-                            <div class="flex items-baseline gap-2 mt-1">
-                                <span class="font-serif text-3xl font-bold text-white" id="totalEstimateAED">AED 2,850</span>
-                                <span class="text-xs text-gold-400" id="perUnitAED">(~AED 114 / unit)</span>
-                            </div>
-                            <span class="text-[11px] text-gray-500 block mt-1">*Final quotation includes volume discounts &amp; custom proofs.</span>
-                        </div>
-
-                        <button id="sendQuoteWhatsapp" class="gold-button text-black font-bold px-8 py-4 rounded-xl text-sm uppercase tracking-wider flex items-center gap-3 w-full md:w-auto justify-center">
-                            <i class="fa-brands fa-whatsapp text-lg"></i> Send Inquiry on WhatsApp
-                        </button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services & Collections Showcase -->
-    <section id="services" class="py-24 max-w-7xl mx-auto px-4 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-gold-500 text-xs font-semibold uppercase tracking-[0.2em] block mb-2">Precision Capabilities</span>
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Our Signature Collections</h2>
-            <p class="text-gray-400 text-sm mt-3">Combining traditional artisan wood finishes with high-tech laser precision marking for Dubai's top hotels, restaurants, and corporate entities.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Card 1 -->
-            <div class="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-gold-500/20 group">
-                <div class="h-60 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1590794056226-77ef3a6c4743?auto=format&fit=crop&w=800&q=80" 
-                         alt="Deli & Cheese Boards" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
-                    <span class="absolute top-4 right-4 bg-black/80 border border-gold-500/40 text-gold-400 text-[10px] uppercase font-semibold px-3 py-1 rounded-full">Hospitality Grade</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="font-serif text-xl font-bold text-white mb-2">Custom Deli &amp; Charcuterie Boards</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
-                        Handcrafted Acacia &amp; Beechwood display boards designed for fine dining presentations, steak houses, and hotel catering.
-                    </p>
-                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Organic Food-Safe Mineral Oil Coating</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Custom Restaurant Logo Laser Engraving</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Deep Juice Grooves &amp; Handle Options</li>
-                    </ul>
-                    <button onclick="openModal('deli')" class="w-full py-2.5 rounded-lg border border-gold-500/40 text-gold-400 text-xs font-semibold uppercase tracking-wider hover:bg-gold-500 hover:text-black transition-colors">
-                        View Technical Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-gold-500/20 group">
-                <div class="h-60 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" 
-                         alt="VIP Corporate Gifts" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
-                    <span class="absolute top-4 right-4 bg-black/80 border border-gold-500/40 text-gold-400 text-[10px] uppercase font-semibold px-3 py-1 rounded-full">Executive VIP</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="font-serif text-xl font-bold text-white mb-2">Luxury Corporate Gift Sets</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
-                        Custom executive boxes, desk organizers, leather-trimmed wooden sets, and personalized client tokens.
-                    </p>
-                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Personalized Recipient Names</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Premium Gold-Foil Packaging Options</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Turnkey Corporate Bulk Fulfillment</li>
-                    </ul>
-                    <button onclick="openModal('corporate')" class="w-full py-2.5 rounded-lg border border-gold-500/40 text-gold-400 text-xs font-semibold uppercase tracking-wider hover:bg-gold-500 hover:text-black transition-colors">
-                        View Technical Details
-                    </button>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-gold-500/20 group">
-                <div class="h-60 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
-                         alt="Precision Engraving Service" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
-                    <span class="absolute top-4 right-4 bg-black/80 border border-gold-500/40 text-gold-400 text-[10px] uppercase font-semibold px-3 py-1 rounded-full">Precision Technology</span>
-                </div>
-                <div class="p-6">
-                    <h3 class="font-serif text-xl font-bold text-white mb-2">High-Definition Laser Marking</h3>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
-                        Contract laser engraving service for client-supplied goods, promotional merchandise, acrylics, and metals.
-                    </p>
-                    <ul class="text-xs text-gray-300 space-y-2 mb-6">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Micro-Detail Text &amp; Vector Graphics</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Fast Batch Turnaround Times in Dubai</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500"></i> Pre-Production Sample Approval</li>
-                    </ul>
-                    <button onclick="openModal('engraving')" class="w-full py-2.5 rounded-lg border border-gold-500/40 text-gold-400 text-xs font-semibold uppercase tracking-wider hover:bg-gold-500 hover:text-black transition-colors">
-                        View Technical Details
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- The LaZéora Gold Guarantee Section -->
-    <section id="guarantee" class="py-20 bg-dark-800 border-t border-gold-500/20">
-        <div class="max-w-7xl mx-auto px-4 lg:px-8">
-            <div class="glass-panel p-8 md:p-14 rounded-3xl border border-gold-500/40 bg-gradient-to-r from-dark-900 via-dark-800 to-dark-900">
-                <div class="grid md:grid-cols-12 gap-8 items-center">
-                    <div class="md:col-span-4 text-center md:text-left">
-                        <div class="w-20 h-20 mx-auto md:mx-0 rounded-full bg-gold-500/10 border-2 border-gold-500 flex items-center justify-center mb-4">
-                            <i class="fa-solid fa-award text-gold-400 text-3xl"></i>
-                        </div>
-                        <span class="text-gold-500 text-xs font-bold uppercase tracking-widest block">Uncompromised Standard</span>
-                        <h2 class="font-serif text-3xl font-bold text-white mt-1">The LaZéora Gold Guarantee</h2>
-                    </div>
-
-                    <div class="md:col-span-8 grid sm:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <h4 class="font-serif text-lg font-bold text-gold-400 flex items-center gap-2">
-                                <i class="fa-solid fa-shield-halved text-sm"></i> 100% Food-Safe Certified
-                            </h4>
-                            <p class="text-xs text-gray-300 leading-relaxed">
-                                All kitchenware and food display items are treated exclusively with organic, non-toxic food-grade mineral oils and natural beeswax.
-                            </p>
-                        </div>
-
-                        <div class="space-y-2">
-                            <h4 class="font-serif text-lg font-bold text-gold-400 flex items-center gap-2">
-                                <i class="fa-solid fa-bullseye text-sm"></i> Zero-Defect Engraving Proof
-                            </h4>
-                            <p class="text-xs text-gray-300 leading-relaxed">
-                                Digital vector proofing and physical sample approvals before mass production guarantee 100% logo replication.
-                            </p>
-                        </div>
-
-                        <div class="space-y-2">
-                            <h4 class="font-serif text-lg font-bold text-gold-400 flex items-center gap-2">
-                                <i class="fa-solid fa-truck-fast text-sm"></i> UAE Express Logistics
-                            </h4>
-                            <p class="text-xs text-gray-300 leading-relaxed">
-                                Dedicated courier and direct venue delivery across Dubai, Abu Dhabi, Sharjah, and all Northern Emirates.
-                            </p>
-                        </div>
-
-                        <div class="space-y-2">
-                            <h4 class="font-serif text-lg font-bold text-gold-400 flex items-center gap-2">
-                                <i class="fa-solid fa-headset text-sm"></i> Direct Founder Support
-                            </h4>
-                            <p class="text-xs text-gray-300 leading-relaxed">
-                                Personal account manager oversight for every order from design concept to final client handover.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Footer Section -->
-    <footer id="contact" class="py-16 bg-dark-900 border-t border-gold-500/20 text-gray-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-                
-                <!-- Col 1: Brand -->
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <img src="https://lh3.googleusercontent.com/gg/ACRwjatTxWVwRghE4HM0TRCbAcvBH-l86KJCJPR47TEpT1e0UWf--3UJH1HMAvMbwoNREsyrmqm_avpjIhJFzKwsBPHl-rUd2I9XWKYSB3fu09arywTPDckiUP6Leu9STqz6bzaOhVOc0wkDx-mQ-lOV1a_KS-FzsloI9x8HQuE53KTWLARj5JQO29m0KlVtVtVXqNoW4Y_ghMpDvjbZ20d1aBKuvaRocRrBItXybWUnvN9-1Ok9jPDsGSYFeDw35ajurplcosVzmL8pzZgmavQ0Y9MLqCwK1wG7kabA=s0" alt="LaZéora" class="w-10 h-10 rounded-full border border-gold-500">
-                        <span class="font-serif text-xl font-bold text-white">LaZéora</span>
-                    </div>
-                    <p class="text-xs leading-relaxed text-gray-400">
-                        Connecting you with trusted service providers &amp; premium commercial solutions across Dubai &amp; the UAE.
-                    </p>
-                    <div class="flex gap-3 text-gold-400 pt-2">
-                        <a href="https://wa.me/971588150615" target="_blank" class="w-8 h-8 rounded-full bg-dark-800 border border-gold-500/30 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-colors">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="mailto:usamaabbasi122233@gmail.com" class="w-8 h-8 rounded-full bg-dark-800 border border-gold-500/30 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-colors">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                        <a href="tel:+971588150615" class="w-8 h-8 rounded-full bg-dark-800 border border-gold-500/30 flex items-center justify-center hover:bg-gold-500 hover:text-black transition-colors">
-                            <i class="fa-solid fa-phone"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Col 2: Quick Links -->
-                <div>
-                    <h4 class="font-serif text-white font-bold mb-4 uppercase tracking-wider text-xs border-b border-gold-500/20 pb-2">Navigation</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About LaZéora</a></li>
-                        <li><a href="#services" class="hover:text-gold-400 transition-colors">Hardwood &amp; Engraving Collections</a></li>
-                        <li><a href="#calculator" class="hover:text-gold-400 transition-colors">VIP Quote Estimator</a></li>
-                        <li><a href="#guarantee" class="hover:text-gold-400 transition-colors">Quality Guarantee</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Direct Contacts -->
-                <div>
-                    <h4 class="font-serif text-white font-bold mb-4 uppercase tracking-wider text-xs border-b border-gold-500/20 pb-2">Verified Contact Details</h4>
-                    <ul class="space-y-3 text-xs">
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-phone text-gold-400 mt-0.5"></i>
-                            <div>
-                                <span class="block text-white font-medium">+971 58 815 0615</span>
-                                <span class="text-[10px] text-gray-500">Direct Call / WhatsApp</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-envelope text-gold-400 mt-0.5"></i>
-                            <div>
-                                <span class="block text-white font-medium">usamaabbasi122233@gmail.com</span>
-                                <span class="text-[10px] text-gray-500">Official Inquiries</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-location-dot text-gold-400 mt-0.5"></i>
-                            <div>
-                                <span class="block text-white font-medium">Dubai, United Arab Emirates</span>
-                                <span class="text-[10px] text-gray-500">Commercial Operations Hub</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Quick Action -->
-                <div>
-                    <h4 class="font-serif text-white font-bold mb-4 uppercase tracking-wider text-xs border-b border-gold-500/20 pb-2">Direct Inquiry</h4>
-                    <p class="text-xs text-gray-400 mb-4">Click below to open a pre-filled VIP inquiry on WhatsApp.</p>
-                    <a href="https://wa.me/971588150615?text=Hello%20LaZ%C3%A9ora%20Team%2C%20I%20would%20like%20to%20discuss%20a%20new%20order." 
-                       target="_blank" 
-                       class="gold-button text-black font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl flex items-center justify-center gap-2 w-full text-center">
-                        <i class="fa-brands fa-whatsapp text-base"></i> Launch WhatsApp Chat
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="pt-8 border-t border-gray-800 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p>&copy; 2026 LaZéora Services &amp; Solutions. All Rights Reserved. Dubai, UAE.</p>
-                <p class="text-[11px]">Designed for Ultra-Luxury Commercial Excellence.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal Template for Product Details -->
-    <div id="productModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="glass-panel border border-gold-500/40 rounded-2xl max-w-xl w-full p-6 relative text-gray-200">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gold-400 text-xl">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div id="modalContent">
-                <!-- Dynamically populated via JS -->
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Quote Calculator Logic
-        const quantityRange = document.getElementById('quantityRange');
-        const quantityDisplay = document.getElementById('quantityDisplay');
-        const totalEstimateAED = document.getElementById('totalEstimateAED');
-        const perUnitAED = document.getElementById('perUnitAED');
-        const materialSelect = document.getElementById('materialSelect');
-        const engravingSelect = document.getElementById('engravingSelect');
-        const sendQuoteWhatsapp = document.getElementById('sendQuoteWhatsapp');
-
-        function updateQuote() {
-            const quantity = parseInt(quantityRange.value);
-            quantityDisplay.textContent = quantity + ' Pcs';
-
-            // Get selected category base price
-            const selectedCategory = document.querySelector('input[name="productCategory"]:checked');
-            const basePrice = parseFloat(selectedCategory.getAttribute('data-base') || 100);
-
-            // Get material multiplier
-            const materialOption = materialSelect.options[materialSelect.selectedIndex];
-            const multiplier = parseFloat(materialOption.getAttribute('data-multiplier') || 1.0);
-
-            // Get engraving extra cost
-            const engravingOption = engravingSelect.options[engravingSelect.selectedIndex];
-            const engravingCost = parseFloat(engravingOption.getAttribute('data-cost') || 0);
-
-            // Calculation
-            let unitPrice = (basePrice * multiplier) + engravingCost;
-            
-            // Bulk discount calculation
-            if (quantity >= 100) {
-                unitPrice *= 0.85; // 15% discount
-            } else if (quantity >= 50) {
-                unitPrice *= 0.90; // 10% discount
-            }
-
-            const total = Math.round(unitPrice * quantity);
-            const formattedTotal = total.toLocaleString();
-            const formattedPerUnit = Math.round(unitPrice);
-
-            totalEstimateAED.textContent = `AED ${formattedTotal}`;
-            perUnitAED.textContent = `(~AED ${formattedPerUnit} / unit)`;
-        }
-
-        // Attach listeners
-        quantityRange.addEventListener('input', updateQuote);
-        materialSelect.addEventListener('change', updateQuote);
-        engravingSelect.addEventListener('change', updateQuote);
-        document.querySelectorAll('input[name="productCategory"]').forEach(radio => {
-            radio.addEventListener('change', updateQuote);
-        });
-
-        // WhatsApp Custom Order Dispatcher
-        sendQuoteWhatsapp.addEventListener('click', () => {
-            const quantity = quantityRange.value;
-            const category = document.querySelector('input[name="productCategory"]:checked').value;
-            const material = materialSelect.options[materialSelect.selectedIndex].text;
-            const engraving = engravingSelect.options[engravingSelect.selectedIndex].text;
-            const estimate = totalEstimateAED.textContent;
-
-            const message = `Hello LaZéora Team, I used your online estimator and would like to order:
-            
-- Category: ${category}
-- Quantity: ${quantity} Pcs
-- Material: ${material}
-- Engraving: ${engraving}
-- Estimated Total: ${estimate}
-
-Please provide official quotation and mockups.`;
-
-            const encoded = encodeURIComponent(message);
-            window.open(`https://wa.me/971588150615?text=${encoded}`, '_blank');
-        });
-
-        // Modal Functionality
-        const modalData = {
-            deli: {
-                title: "Custom Deli & Charcuterie Boards Specifications",
-                content: `
-                    <p class="text-xs text-gray-300 leading-relaxed mb-4">Engineered specifically for commercial high-turnover hospitality environments like hotels, steak houses, and luxury catering.</p>
-                    <ul class="text-xs text-gray-300 space-y-2 mb-4">
-                        <li><strong>Standard Dimensions:</strong> 35x20cm, 45x25cm, 60x30cm (Custom dimensions available)</li>
-                        <li><strong>Timber Choices:</strong> Premium Kiln-Dried Acacia, European Beech, Rubberwood</li>
-                        <li><strong>Finish:</strong> Certified Food-Safe Deep浸 Mineral Oil & Organic Beeswax</li>
-                        <li><strong>Customization:</strong> High-definition logo laser engraving on board face or handle</li>
-                    </ul>
-                `
-            },
-            corporate: {
-                title: "Executive VIP Corporate Gift Sets",
-                content: `
-                    <p class="text-xs text-gray-300 leading-relaxed mb-4">Designed to leave an unforgettable impression on high-net-worth clients, corporate partners, and VIP guests.</p>
-                    <ul class="text-xs text-gray-300 space-y-2 mb-4">
-                        <li><strong>Set Contents:</strong> Customized wooden box, engraved pen set, coaster set, desk organizer</li>
-                        <li><strong>Packaging:</strong> Premium matte-black presentation box with gold foil logo stamping</li>
-                        <li><strong>Personalization:</strong> Individual recipient name laser-engraved on each piece</li>
-                        <li><strong>Lead Time:</strong> 3 - 5 Working Days across Dubai</li>
-                    </ul>
-                `
-            },
-            engraving: {
-                title: "Contract High-Definition Laser Marking",
-                content: `
-                    <p class="text-xs text-gray-300 leading-relaxed mb-4">State-of-the-art CO2 and Fiber laser technology capable of engraving intricate vector artwork with extreme accuracy.</p>
-                    <ul class="text-xs text-gray-300 space-y-2 mb-4">
-                        <li><strong>Supported Materials:</strong> Hardwoods, Leather, Acrylic, Stainless Steel, Anodized Aluminum</li>
-                        <li><strong>Precision:</strong> Down to 0.1mm micro-detail rendering</li>
-                        <li><strong>Capacity:</strong> Up to 1,000 units per day batch production</li>
-                        <li><strong>Sample Proofing:</strong> Digital rendering & physical sample prior to main run</li>
-                    </ul>
-                `
-            }
-        };
-
-        function openModal(type) {
-            const modal = document.getElementById('productModal');
-            const content = document.getElementById('modalContent');
-            const data = modalData[type];
-
-            content.innerHTML = `
-                <h3 class="font-serif text-xl font-bold text-gold-400 mb-3">${data.title}</h3>
-                ${data.content}
-                <a href="https://wa.me/971588150615?text=I%20would%20like%20to%20inquire%20specifically%20about%20${encodeURIComponent(data.title)}" 
-                   target="_blank" 
-                   class="gold-button text-black font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl flex items-center justify-center gap-2 mt-6">
-                   <i class="fa-brands fa-whatsapp text-sm"></i> Order This Specification
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#calculator" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-600 via-gold-500 to-gold-400 text-obsidian-900 font-bold text-lg hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all">
+                    Get Free Quote & Consultation
                 </a>
-            `;
+                <a href="tel:+971588150615" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card text-white font-bold text-lg hover:border-gold-500 transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone text-gold-400"></i>
+                    <span>+971 58 815 0615</span>
+                </a>
+            </div>
 
-            modal.classList.remove('hidden');
-        }
+            <!-- QUICK STATS -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-5xl mx-auto">
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-3xl font-serif font-bold text-gold-400 block">100%</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Quality Assured</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-3xl font-serif font-bold text-gold-400 block">Fast</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">UAE Dispatch & Response</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-3xl font-serif font-bold text-gold-400 block">Turnkey</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Solutions</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <span class="text-3xl font-serif font-bold text-gold-400 block">24/7</span>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider">Client Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        function closeModal() {
-            document.getElementById('productModal').classList.add('hidden');
-        }
+    <!-- CORE SERVICES FRONT PAGE SHOWCASE -->
+    <section id="services" class="py-20 px-4 bg-obsidian-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold text-gold-400 tracking-widest uppercase mb-2">Complete Services Portfolio</h2>
+                <p class="text-3xl md:text-5xl font-serif font-bold text-white">What We Do Best</p>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
 
-        // Initialize default quote calculations
-        updateQuote();
-    </script>
-</body>
-</html>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 1. PLUMBING -->
+                <div class="glass-card rounded-3xl p-8 hover:border-gold-500 transition-all duration-300 group">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-3">Plumbing Services</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Complete commercial and residential plumbing solutions. Leak detection, pipe installation, sanitary fitting, pump repair, and emergency plumbing support across Dubai.
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Emergency Leak Repair</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Sanitary Fixtures Installation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Water Heater Maintenance</li>
+                    </ul>
+                    <a href="https://wa.me/971588150615?text=Hello,%20I%20need%20Plumbing%20services." target="_blank" class="inline-flex items-center gap-2 text-gold-400 font-semibold hover:gap-3 transition-all text-sm">
+                        <span>Book Plumbing Service</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2. ELECTRICAL WORK -->
+                <div class="glass-card rounded-3xl p-8 hover:border-gold-500 transition-all duration-300 group">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-3">Electrical Contracting</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Licensed electrical installations, panel wiring upgrades, indoor/outdoor luxury LED lighting setups, short circuit fixes, and complete property power rewiring.
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Distribution Board Upgrades</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Architectural Lighting Design</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Short Circuit Troubleshooting</li>
+                    </ul>
+                    <a href="https://wa.me/971588150615?text=Hello,%20I%20need%20Electrical%20services." target="_blank" class="inline-flex items-center gap-2 text-gold-400 font-semibold hover:gap-3 transition-all text-sm">
+                        <span>Book Electrical Service</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 3. HOME RENOVATION -->
+                <div class="glass-card rounded-3xl p-8 hover:border-gold-500 transition-all duration-300 group">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-3">Home Renovation & Fit-Out</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transforming villas, apartments, offices, and retail spaces. Complete structural remodeling, tiling, drywall partition, bathroom & kitchen updates.
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Full Villa & Apartment Remodeling</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Kitchen & Bathroom Fit-Outs</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Flooring & Custom Tiling</li>
+                    </ul>
+                    <a href="https://wa.me/971588150615?text=Hello,%20I%20need%20Home%20Renovation%20quote." target="_blank" class="inline-flex items-center gap-2 text-gold-400 font-semibold hover:gap-3 transition-all text-sm">
+                        <span>Inquire Renovation</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 4. INTERIOR DECORATING -->
+                <div class="glass-card rounded-3xl p-8 hover:border-gold-500 transition-all duration-300 group">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-3">Home Decorating & Painting</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Luxury wall finishes, decorative plastering, wallpaper installation, custom accent wall paneling, and high-precision painting services.
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Luxury Interior & Exterior Painting</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Custom Wall Paneling & Woodwork</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Wallpaper Installation</li>
+                    </ul>
+                    <a href="https://wa.me/971588150615?text=Hello,%20I%20need%20Decorating%20and%20Painting%20quote." target="_blank" class="inline-flex items-center gap-2 text-gold-400 font-semibold hover:gap-3 transition-all text-sm">
+                        <span>Get Painting Estimate</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 5. PRINTING & ENGRAVING -->
+                <div class="glass-card rounded-3xl p-8 hover:border-gold-500 transition-all duration-300 group">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-3">Custom Printing & Engraving</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        High-precision laser engraving, thermal burn branding, corporate promotional assets, signage, custom stationery, and luxury client gifting.
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Laser Logo Engraving on Wood & Metal</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Corporate Promotional Branding</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Signage & Custom Marketing Prints</li>
+                    </ul>
+                    <a href="https://wa.me/971588150615?text=Hello,%20I%20need%20Printing%20and%20Engraving%20services." target="_blank" class="inline-flex items-center gap-2 text-gold-400 font-semibold hover:gap-3 transition-all text-sm">
+                        <span>Order Printing & Engraving</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 6. BESPOKE WOODWORK -->
+                <div class="glass-card rounded-3xl p-8 hover:border-gold-500 transition-all duration-300 group">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-3">Custom Woodwork & Hospitality</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Crafting bespoke wooden cutting boards, cheese & meat deli platters, Acacia & Rubberwood kitchen accessories with food-grade oil finishes.
+                    </p>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Acacia, Rubberwood & Beech Board Supplies</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Food-Grade Olive Oil Coating Finish</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-400 text-xs"></i> Bulk Hotel & Restaurant Orders</li>
+                    </ul>
+  
